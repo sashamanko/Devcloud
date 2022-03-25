@@ -1,4 +1,4 @@
-/* Global
+/* Global.CSS
 __________________________________________________ */
 
 :root {
@@ -13,8 +13,36 @@ __________________________________________________ */
 	/* Gradient */
 	--gradient-1: linear-gradient(243.89deg, #25BA9F 2.05%, #1B7F6D 52.81%, #157161 75.54%, #09463B 101.06%);
 
-	/* Fonts */
-	--font-famile: 'Open Sans', sans-serif;
+	/* Global */
+	--global-font-famile: 'Open Sans', sans-serif;
+	--global-font-size: 18px;
+	--global-size-container: 1450px;
 
-	--font-size: 18px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Tags
+__________________________________________________ */
+
+body {
+	font-family: var(--global-font-famile);
+	font-size: var(--global-font-size);
+	background: var(--white-100);
+}
+
+/* Class
+__________________________________________________ */
+
+.container {
+	max-width: var(--global-size-container);
+	margin: 0 auto;
+}
+
+.d-flex {
+	display: flex;
 }
