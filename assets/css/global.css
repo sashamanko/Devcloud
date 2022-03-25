@@ -1,0 +1,20 @@
+/* Global
+__________________________________________________ */
+
+:root {
+  /* Colors */
+  --turquoise-100: #017B65;
+  --turquoise-200: #29A28C;
+
+  --white-100: #E5E5E5;
+
+	--black-100: #000000;
+
+	/* Gradient */
+	--gradient-1: linear-gradient(243.89deg, #25BA9F 2.05%, #1B7F6D 52.81%, #157161 75.54%, #09463B 101.06%);
+
+	/* Fonts */
+	--font-famile: 'Open Sans', sans-serif;
+
+	--font-size: 18px;
+}
