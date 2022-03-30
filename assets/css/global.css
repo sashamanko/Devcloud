@@ -1,4 +1,4 @@
-/* Global.CSS
+/* global.css
 __________________________________________________ */
 
 :root {
@@ -36,6 +36,13 @@ body {
 	background: var(--white-200);
 }
 
+button {
+	font-family: var(--global-font-famile);
+	border: none;
+	background: transparent;
+	cursor: pointer;
+}
+
 /* Class
 __________________________________________________ */
 
@@ -48,27 +55,171 @@ __________________________________________________ */
 	display: flex;
 }
 
+a {
+	text-decoration: none;
+}
+
+
 /* Header
 __________________________________________________ */
 
 .header {
+	position: fixed;
+	width: 100%;
 	background: #29a28c1c;
+	z-index: 9999999999;
 }
 
 .header__container {
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	height: 81px;
 }
 
 .header__logo {
+	min-width: 270px;
 	align-items: center;
+	margin-right: 20px;
 	color: var(--white-100);
-	text-decoration: none;
 	font-weight: 700;
 	line-height: 1.38;
 }
 
 .header__logo > img {
 	margin-right: 11px;
+}
+
+.header__navbar {
+	justify-content: space-between;
+	max-width: 889px;
+	width: 100%;
+}
+
+.header__navbar__item {
+	color: var(--white-100);
+	letter-spacing: 0.025rem;
+	font-size: var(--global-font-size);
+	
+	cursor: pointer;
+}
+
+.header__navbar__item > svg {
+	margin: 0 0 1px 3px;
+	fill: transparent;
+}
+
+.header__navbar__item > svg > path {
+	stroke: var(--white-100);
+}
+
+.header__tooltip-parent {
+	position: relative;
+}
+
+.header__tooltip__container {
+	z-index: 9999999999;
+	position: absolute;
+	padding-top: 38px;
+	top: 100%;
+	left: -214px;
+	width: 710px;
+	cursor: default;
+}
+
+.header__tooltip__content {
+	position: relative;
+	width: 100%;
+	padding: 57px 0 83px 63px;
+	background: var(--white-100);
+}
+
+.header__tooltip__content::after {
+	content: '';
+	position: absolute;
+	top: -6px;
+	left: 248px;
+	width: 20px;
+	height: 20px;
+	background: var(--white-100);
+	transform: rotate(45deg);
+}
+
+.header__tooltip__title {
+	position: relative;
+	margin-bottom: 30px;
+	font-size: 2rem;
+	font-weight: 400;
+	text-align: left;
+	letter-spacing: 0.2579rem;
+	text-transform: uppercase;
+	color: var(--black-100);
+}
+
+.header__tooltip__title::after {
+	content: '';
+	position: absolute;
+	top: calc(100% + 2px);
+	left: -18px;
+	width: 309px;
+	height: 1px;
+	background: var(--turquoise-100);
+}
+
+.header__tooltip__navbar {
+	flex-direction: column;
+	text-align: left;
+}
+
+.header__tooltip__navbar__item {
+	color: var(--black-100);
+	font-size: 1.625rem;
+	letter-spacing: 0.025rem;
+	transition: all 0.3s;
+}
+
+.header__tooltip__navbar__item:not(:last-child) {
+	margin-bottom: 19px;
+}
+
+.header__tooltip__navbar__item:hover {
+	color: var(--turquoise-100);
+}
+
+.header__tooltip__content__right {
+	position: absolute;
+	top: 45px;
+	right: 27px;
+	width: 263px;
+	height: 169px;
+}
+
+.header__menu-btn {
+	justify-content: center;
+	align-items: center;
+	display: none;
+	width: 39px;
+	height: 39px;
+}
+
+.header__menu-btn > span {
+	position: relative;
+	width: 26px;
+	height: 2px;
+	background: var(--white-100);
+	border-radius: 2px;
+}
+
+.header__menu-btn > span::after,
+.header__menu-btn > span::before {
+	content: '';
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	background: inherit;
+	border-radius: inherit;
+	transform: translate(-50%, -8px);
+}
+
+.header__menu-btn > span::before {
+	transform: translate(-50% , 8px);
 }

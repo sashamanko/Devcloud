@@ -1,0 +1,56 @@
+/* media.css
+__________________________________________________ */
+
+@media screen and (max-width: 1450px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header__navbar {
+        display: none;
+    }
+
+    .header__logo {
+        min-width: 0;
+        margin-right: 0;
+    }
+
+    .header__menu-btn {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header__menu-btn > span {
+        width: 8px;
+    }
+
+    .header__logo {
+        font-size: 1rem;
+    }
+
+    .header__logo > img {
+        width: 22px;
+        margin-right: 8px;
+    }
+    
+    .header__menu-btn {
+        justify-content: flex-end;
+    }
+
+    .header__menu-btn > span {
+        width: 8px;
+    }
+
+    .header__menu-btn > span::after {
+        width: 13px;
+        transform: translate(-70%, -8px) ;
+    }
+
+    .header__menu-btn > span::before {
+        width: 16px;
+        transform: translate(-74%, 8px);
+    }
+}
