@@ -102,7 +102,7 @@ __________________________________________________ */
 
 .header__navbar__item {
 	color: var(--white-100);
-	letter-spacing: 0.025rem;
+	letter-spacing: .025rem;
 	font-size: var(--global-font-size);
 	
 	cursor: pointer;
@@ -155,7 +155,7 @@ __________________________________________________ */
 	font-size: 2rem;
 	font-weight: 400;
 	text-align: left;
-	letter-spacing: 0.2579rem;
+	letter-spacing: .2579rem;
 	text-transform: uppercase;
 	color: var(--black-100);
 }
@@ -182,8 +182,8 @@ __________________________________________________ */
 .header__tooltip__navbar__item__link {
 	color: var(--black-100);
 	font-size: 1.625rem;
-	letter-spacing: 0.025rem;
-	transition: all 0.3s;
+	letter-spacing: .025rem;
+	transition: all .3s;
 }
 
 
