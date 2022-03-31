@@ -27,6 +27,11 @@ __________________________________________________ */
 	box-sizing: border-box;
 }
 
+[data-visibility='hidden'] {
+	display: none;
+	visibility: hidden;
+}
+
 /* Tags
 __________________________________________________ */
 
@@ -97,7 +102,7 @@ __________________________________________________ */
 
 .header__navbar__item {
 	color: var(--white-100);
-	letter-spacing: 0.025rem;
+	letter-spacing: .025rem;
 	font-size: var(--global-font-size);
 	
 	cursor: pointer;
@@ -150,7 +155,7 @@ __________________________________________________ */
 	font-size: 2rem;
 	font-weight: 400;
 	text-align: left;
-	letter-spacing: 0.2579rem;
+	letter-spacing: .2579rem;
 	text-transform: uppercase;
 	color: var(--black-100);
 }
@@ -170,18 +175,19 @@ __________________________________________________ */
 	text-align: left;
 }
 
-.header__tooltip__navbar__item {
-	color: var(--black-100);
-	font-size: 1.625rem;
-	letter-spacing: 0.025rem;
-	transition: all 0.3s;
-}
-
 .header__tooltip__navbar__item:not(:last-child) {
 	margin-bottom: 19px;
 }
 
-.header__tooltip__navbar__item:hover {
+.header__tooltip__navbar__item__link {
+	color: var(--black-100);
+	font-size: 1.625rem;
+	letter-spacing: .025rem;
+	transition: all .3s;
+}
+
+
+.header__tooltip__navbar__item__link:hover {
 	color: var(--turquoise-100);
 }
 
@@ -223,3 +229,26 @@ __________________________________________________ */
 .header__menu-btn > span::before {
 	transform: translate(-50% , 8px);
 }
+
+/* Footer
+__________________________________________________ */
+
+/* .footer {
+
+}
+
+.footer__info {
+
+}
+
+.footer__logo {
+	align-items: center;
+	font-weight: 700;
+	font-size: 1.11;
+	line-height: 1.5;
+}
+
+.footer__logo > img {
+	width: 82px;
+	margin-right: 5px;
+} */
