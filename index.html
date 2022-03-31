@@ -37,7 +37,7 @@
 
         <a class="header__navbar__item" href="#">Главная</a>
 
-        <button class="header__navbar__item header__tooltip-parent js--header-tooltip-triger">
+        <div class="header__navbar__item header__tooltip-parent js--header-tooltip-triger">
           Услуги
           <svg width="14" height="8" viewBox="0 0 14 8" fill="correntColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M1 1L7 7L13 1"/>
@@ -49,8 +49,13 @@
                 <h2 class="header__tooltip__title">Наши услуги</h2>
 
                 <ul class="header__tooltip__navbar d-flex">
-                  <a class="header__tooltip__navbar__item" href="#">Мобильные приложения</a>
-                  <a class="header__tooltip__navbar__item" href="#">Веб приложения</a>
+                  <li class="header__tooltip__navbar__item">
+                    <a class="header__tooltip__navbar__item__link" href="#">Мобильные приложения</a>
+                  </li>
+
+                  <li class="header__tooltip__navbar__item">
+                    <a class="header__tooltip__navbar__item__link" href="#">Веб приложения</a>
+                  </li>
                 </ul>
 
               </div>
@@ -60,7 +65,7 @@
             </div>
           </div>
 
-        </button>
+        </div>
 
         <a class="header__navbar__item" href="#">Как мы работаем</a>
         <a class="header__navbar__item" href="#">Портфолио</a>
