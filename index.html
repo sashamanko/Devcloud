@@ -17,6 +17,7 @@
   <!-- CSS
   __________________________________________________ -->
   <link rel="stylesheet" href="./assets/css/global.css">
+  <link rel="stylesheet" href="./assets/css/media.css">
 
 </head>
 
@@ -28,20 +29,43 @@
     <div class="header__container container d-flex">
       
       <a class="header__logo d-flex" href="#">
-        <img src="./assets/icons/logo.png" alt="Logo | DEVCLOUD SOLUTIONS">
+        <img src="./assets/images/icons/logo.png" alt="Logo | DEVCLOUD SOLUTIONS">
         DEVCLOUD SOLUTIONS
       </a>
 
-      <nav class="header__navbar">
+      <nav class="header__navbar d-flex">
 
         <a class="header__navbar__item" href="#">Главная</a>
 
-        <a class="header__navbar__item" href="#">
+        <div class="header__navbar__item header__tooltip-parent js--header-tooltip-triger">
           Услуги
-          <svg width="14" height="8" viewBox="0 0 14 8" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <svg width="14" height="8" viewBox="0 0 14 8" fill="correntColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M1 1L7 7L13 1"/>
           </svg>
-        </a>
+
+          <div class="header__tooltip__container js--header-tooltip-triger">
+            <div class="header__tooltip__content d-flex">
+              <div class="header__tooltip__content__left">
+                <h2 class="header__tooltip__title">Наши услуги</h2>
+
+                <ul class="header__tooltip__navbar d-flex">
+                  <li class="header__tooltip__navbar__item">
+                    <a class="header__tooltip__navbar__item__link" href="#">Мобильные приложения</a>
+                  </li>
+
+                  <li class="header__tooltip__navbar__item">
+                    <a class="header__tooltip__navbar__item__link" href="#">Веб приложения</a>
+                  </li>
+                </ul>
+
+              </div>
+
+              <img class="header__tooltip__content__right" src="./assets/images/img/mac.png" alt="Image | Mac">
+
+            </div>
+          </div>
+
+        </div>
 
         <a class="header__navbar__item" href="#">Как мы работаем</a>
         <a class="header__navbar__item" href="#">Портфолио</a>
@@ -50,9 +74,14 @@
 
       </nav>
 
+      <button class="header__menu-btn js--header-menu-btn">
+        <span></span>
+      </button>
+
     </div>
   </header>
 
+  <script src="./assets/js/app.js"></script>
 
 </body>
 
