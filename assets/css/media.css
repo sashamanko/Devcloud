@@ -30,12 +30,12 @@ __________________________________________________ */
         column-gap: 200px;
     }
 
-    .footer__container > :nth-child(2) {
+    .footer__container > .footer__soc-media {
         padding-left: 75px;
         grid-row-start: 2;
     }
 
-    .footer__container > :nth-child(3) {
+    .footer__container > .footer__navbar {
         grid-column-start: 2;
         grid-row-start: 1;
         grid-row-end: 3;
