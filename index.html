@@ -17,6 +17,7 @@
   <!-- CSS
   __________________________________________________ -->
   <link rel="stylesheet" href="./assets/css/global.css">
+  <link rel="stylesheet" href="./assets/css/animation.css">
   <link rel="stylesheet" href="./assets/css/media.css">
 
 </head>
@@ -50,11 +51,11 @@
 
                 <ul class="header__tooltip__navbar d-flex">
                   <li class="header__tooltip__navbar__item">
-                    <a class="header__tooltip__navbar__item__link" href="#">Мобильные приложения</a>
+                    <a class="header__tooltip__navbar__item__link hover-turquoise-100" href="#">Мобильные приложения</a>
                   </li>
 
                   <li class="header__tooltip__navbar__item">
-                    <a class="header__tooltip__navbar__item__link" href="#">Веб приложения</a>
+                    <a class="header__tooltip__navbar__item__link hover-turquoise-100" href="#">Веб приложения</a>
                   </li>
                 </ul>
 
@@ -81,16 +82,110 @@
     </div>
   </header>
 
-  <!-- <footer class="footer">
-    <div class="container">
+  <footer class="footer">
+    <div class="footer__container container">
       <div class="footer__info">
-        <div class="footer__logo d-flex">
+        <a class="footer__logo d-flex" href="#">
           <img src="./assets/images/icons/logo.png" alt="Logo | DEVCLOUD SOLUTIONS">
           DEVCLOUD SOLUTIONS
-        </div>
+        </a>
+
+        <p class="footer__info__location">Алматы, Жамбыла 111</p>
       </div>
+
+      <div class="footer__soc-media">
+        <span class="footer__soc-media__tel d-flex">
+          
+          <svg width="27" height="29" viewBox="0 0 27 29" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect y="0.386719" width="27" height="28.1571" fill="url(#pattern0)"/>
+            <defs>
+            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_259_353" transform="translate(-0.0214286) scale(0.0108631 0.0104167)"/>
+            </pattern>
+            <image id="image0_259_353" width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAE1ElEQVR4nO2dbajfYxjHP8c5M9GZM8ckrakRY2Sb9kaMJRNbUpM0RCNeEEoi5a1I5HhIzRQZXogm0kR5zkbKTNbUzjzlOcb4c7Y5Py+u88/WOWfn979/933dD//rU/e7/znX976+v/P/3Q/XfR8wDMMwDMMwDMMwVOnp8PP9wCJgLjDNk4YtwAeeflexHAk8DvwFVJ7bCLBMryv5cQSwFf+J37ftBI7W6lBuPEPY5Lfbaq0OpcRBNT5zSXAVQr9SnKSoY8Du4CoEM2ASWsFVCHOV4iRFHQN+CK5COF4pTlLUMWBHcBXCYuAwpVjJUMeA4eAqhEOAc5ViJUNKfwEASxVjJUFqBixRjJUN89CZiFXAXuBwnW6lQd13wN7QQsboBc5SipUEdSdi9h4IRB0DALYFVbE/XbUyWteArUFV7M8pyHunK6hrwHtBVYznUuV4yTOAvIi1RkPD1H84uoaP0TOgAs7R6VZcOnnK3gqmYmLOU44XhZQNOFE5XhQ6MeAd9DZnAL5XjJUNr6Hz/b8HOEmpT1HpdKSxPoiK8dyK7twjG44B/iXs0/+kWm8y5Q3CJf9NZGPGOABXEyb5nyATPmMK+vFforgNmKXZidx5An/J/wo4Vld+/izET/K/BY5T1l4MH9Is+T8CJ6urLojLcU/+T8B8fcll0YdsVboY0JWV0CG4EfchZ28EvcVxKLJo5mLCNRH0FskNuBmwE5gdQW9xTAO242bCK3R+ULAofHwPjwK/ACsdfvYExIi3PejoanqA93H7KxgFLtOXXB4Lca+c+BOblHnhUdwnZ58hoyqjATOB73A34Vm6/KXsgxW4G1ABd+lLLo91uBswipUmNmYQ9xlyhdwfcYG66sJYSrN60hZdUp4Ykrtp9j74gy48OemTPqS0vYkJI8AV2sJLYg6yAdPEhFHg9kD6ZgEvIPVO7wLXU+BBwSXIk9zEhApYg7+bugBOA76cIE4LGcktAw72GC8q19LcgAp4HT/1Q2ciS+J13kPrgTuB5cilIn0e4kfhQfyY8DnNzpGdT7Papt3AF8CrwBDytXU2crVb0vQCL+LHhF3AlQ4algP/eNIwUdsBrEWWZZJkOn7rS9dS/5aVFYRN/r5tXUdZUaYf2IS/zg4z9fnii/AzEOikJX33xSDwKX47/BQTfw9fjH7yK+C+RhlSYCZyaavPTu8C7uH/sfxK5KWpnfwKeMxTnoIyA9kT9t35n4FHiJf8bAwA2QnbQLxERTMgldPoLWSE8nBsIdqkYgDI0vVNyKRmT2QtaqRkQJs1wIXAb7GFaJCiASATtQXI4fCiSdUAgK+RXbVb0D2hr0rKBoDsAwwhC13bI2sJQuoGtNkInArci2ycFEMuBgD8DdwBnA58FFmLN3IyoM1m4AzkPonfI2tpTI4GgMwZHkB2px5C715T7+RqQJtfgZuR/+z0cmQtTuRuQJstyHr/AuD5yFo6ohQD2mxG6koXA09T8PwhF45C6om+Ic5q6FD4LubBdOQY1Evo7QlXwHUancuNAeAq5IRmSDNGsPuPpmQAWIVcv+N61HaytkGxH8UwB7mE5H7k+rQ6lXOTtdvqBLTzWAemB7nPaNFYm41Ucwwi1RcDSLHZjLHPt5B7MJ5D9jVsFGYYhmEYhmEYxjj+A7C1xpwzDqW5AAAAAElFTkSuQmCC"/>
+            </defs>
+          </svg>
+
+            <span class="footer__soc-media__tel__num d-flex">
+              <a class="footer__soc-media__tel__num__link hover-turquoise-100" href="tel:38096732145">+380 (96) 73-21-45</a>
+              <a class="footer__soc-media__tel__num__link hover-turquoise-100" href="tel:38073799890">+380 (73) 79-98-90</a>
+            </span>
+        </span>
+
+        <div class="footer__soc-media__cos-media d-flex">
+          <a class="footer__soc-media__cos-media__link hover-turquoise-100" href="main:info@devcloud.kz">
+            
+            <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect y="0.656738" width="26" height="22.9429" fill="url(#pattern0)"/>
+              <defs>
+              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0_259_358" transform="translate(0 -0.0666251) scale(0.01 0.0113325)"/>
+              </pattern>
+              <image id="image0_259_358" width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAADg0lEQVR4nO3dO2gUURTG8f9GjQ/UiIgoEhEERVFQCCgoWphOUwqpLG0tbS3FztJWrGwFLYQUCopCCoMSUBQlKOIT3/GVtZgcsrvOnZ3Zndk5s/l+cAks5N4z99t57L15gIiIiIiIiIiIiIhUXw2ol12ELBgouwBppkCcUSDOLI15rdbzKha3pnu4zhBnFIgzCsQZBeKMAnFGgTijQJxRIM6kCWSw8CoWj1RzWW9prZ4AJ3MsarEaBR7FvP7f/LcLxF6fAPYXUWmf2w3coP38Zg6kDvwFLgOb8666D20ALgJ/SD+/mQOx9hU4B6zM8wj6xCBwBvhE/Ny1yhzIVKDjOvAcGEcrxBDNwTjRnITmayrm+zIHMgCcAl4nDHQfOJzLYVXTCHCb8Py8Izpr4rY7MgdiVhNdpn4EBp0DrgLbujmyitkCXCK6t8bNyS+i+8hQQh8dB2KGiW7sc4EivgPngbVZjqxiVgFngS+Ez4prwPYUfXUdiDkA3Eko6BVwGliSoU/vakSfyV4QPu5J4EiGPnMLpLHApBvZJHA0Y78eHQTuEj7Ol3T2Bsw1EGOn8OeEgtOewt5sJfkS/Y3oEr2mw/4LCcSkvcmt63KcXujVQ0yhgZgR4FZM39beE34MLFuax/x7wKGcxutJIGYMeBozhrVp4ETOY3bjGPCAcL0zRGHl+UG4p4FA+6WEOnAT2FvA2GntJLr8hOqzpaIVBYzd80BMaLHN2m+i+8/GAmtotZ7ohvwzUJMtpm4qsIbSAjG7gOsx41r7SPTEtrzAGpYRPaK+TahjAthXYA2m9EDMKPAwZnxrjylmY6yscUPcBAIL79Q3MXXk/U5td2Z+oPgzM46rQEyR13KP965GLgMxO0j3tJNmYyzt092eXI8gO9eBmG4/D4wBzxK+fxo4Xlz5mVQiEEi/Mdb4ibndCkHSRlFZKhOIGQIuALPET/IccGW+hRYAZ+f7SNooKkvlAjHtVl1Dzfsqc2UDMe02xqxVZR+m8oFA8sZYpxtFZemLQEzj3rbt5Xe6UVSWpvmP+0sOVfwZq+H5rzOlVtGZpvnvl0CqrGn+9fshzigQZxSIMwrEGQXijAJxRoE4o0CcUSDOKBBnFIgzCsQZBeKMAnFGgTijQJxRIM4oEGcUiDMKxBkF4owCcUaBOKNAnNH/oHJGZ4gzCsQZBSIiIiIiIiIiIiIikrt/ptlxJhIU9K0AAAAASUVORK5CYII="/>
+              </defs>
+              </svg>                
+
+            info@devcloud.kz
+          </a>
+
+          <span class="d-flex">
+            <a class="footer__soc-media__cos-media__link hover-turquoise-100" href="#">
+
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_259_361)">
+                <path d="M22.2564 1.74901C20.0561 -0.452492 17.1301 -1.66583 14.0127 -1.66699C7.58908 -1.66699 2.36125 3.55851 2.35892 9.98217C2.35775 12.0355 2.89442 14.0398 3.91409 15.8062L2.33325 21.6663L8.43842 20.2232C10.1406 21.1518 12.0562 21.6407 14.0069 21.6418H14.0116C20.4341 21.6418 25.6619 16.4152 25.6654 9.99268C25.6677 6.87884 24.4567 3.95167 22.2564 1.74901ZM19.7143 14.146C19.4716 14.8262 18.2828 15.4818 17.7484 15.5297C17.2141 15.5787 16.7136 15.7712 14.2543 14.8017C11.2944 13.635 9.42542 10.6005 9.28075 10.4068C9.13492 10.212 8.09192 8.82834 8.09192 7.39567C8.09192 5.96301 8.84442 5.25834 9.11158 4.96784C9.37875 4.67617 9.69375 4.60384 9.88858 4.60384C10.0823 4.60384 10.2771 4.60384 10.4463 4.61084C10.6539 4.61901 10.8838 4.62951 11.1019 5.11367C11.3609 5.69001 11.9268 7.12967 11.9991 7.27551C12.0714 7.42134 12.1204 7.59168 12.0236 7.78534C11.9268 7.97901 11.8778 8.10034 11.7331 8.27067C11.5873 8.44101 11.4274 8.64984 11.2968 8.78051C11.1509 8.92517 10.9993 9.08384 11.1684 9.37434C11.3388 9.66601 11.9221 10.6192 12.7878 11.3903C13.9008 12.382 14.8376 12.6888 15.1293 12.8358C15.4209 12.9817 15.5901 12.9572 15.7604 12.7623C15.9307 12.5687 16.4884 11.913 16.6821 11.6213C16.8757 11.3297 17.0706 11.3787 17.3378 11.4755C17.6049 11.5723 19.0364 12.277 19.3269 12.4228C19.6186 12.5687 19.8123 12.641 19.8846 12.7623C19.9569 12.8825 19.9569 13.4658 19.7143 14.146Z" fill="black"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_259_361">
+                <rect width="28" height="28" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+
+              Whatsapp
+            </a>
+
+            <a class="footer__soc-media__cos-media__link hover-turquoise-100" href="#">
+
+              <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_259_359)">
+                <path d="M24.914 -0.461853C24.5091 -0.805293 23.8729 -0.854433 23.2152 -0.590373H23.2141C22.5224 -0.312813 3.63319 7.78934 2.86423 8.12037C2.72437 8.16897 1.50289 8.62473 1.62871 9.63993C1.74103 10.5552 2.72275 10.9343 2.84263 10.978L7.64485 12.6223C7.96345 13.6829 9.13795 17.5957 9.39769 18.4317C9.55969 18.9528 9.82375 19.6375 10.2865 19.7784C10.6926 19.935 11.0965 19.7919 11.3579 19.5867L14.2939 16.8635L19.0334 20.5598L19.1463 20.6273C19.4681 20.7699 19.7765 20.8411 20.0708 20.8411C20.2981 20.8411 20.5163 20.7985 20.7247 20.7132C21.4348 20.4216 21.7189 19.7449 21.7486 19.6683L25.2888 1.26669C25.5048 0.283887 25.2046 -0.216153 24.914 -0.461853ZM11.8801 13.2801L10.2601 17.6001L8.64007 12.2001L21.0601 3.02007L11.8801 13.2801Z" fill="black"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_259_359">
+                <rect width="27" height="27" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+
+                Telegram
+
+            </a>
+          </span>
+        </div>
+
+      </div>
+
+      <nav class="footer__navbar">
+
+        <a class="footer__navbar__item" href="#">Главная</a>
+        <a class="footer__navbar__item" href="#">Процессы</a>
+        <a class="footer__navbar__item" href="#">Портфолио</a>
+        
+        <a class="footer__navbar__item" href="#">О компании</a>
+        <a class="footer__navbar__item" href="#">Услуги</a>
+        <a class="footer__navbar__item" href="#">Контакты</a>
+
+      </nav>
+
+      <a class="footer__to-top-arrow" href="#">
+        <svg width="34" height="58" viewBox="0 0 34 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 57.3999L17 1.08562M17 1.08562L33 17.7713M17 1.08562L1 17.7713" stroke="black"/>
+          </svg>
+      </a>
+
     </div>
-  </footer> -->
+  </footer>
 
   <script src="./assets/js/index.js" type="module"></script>
 
