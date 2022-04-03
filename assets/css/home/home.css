@@ -1,6 +1,5 @@
-/* index.css
+/* home.css
 __________________________________________________ */
-
 
 
 /* Section | Hero
@@ -9,7 +8,7 @@ __________________________________________________ */
 .hero {
     width: 100%;
     height: 100vh;
-    background-image: url('../images/index/hero.png');
+    background-image: url('../../images/home/hero.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

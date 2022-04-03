@@ -159,7 +159,8 @@ __________________________________________________ */
 	font-size: 2rem;
 	font-weight: 400;
 	text-align: left;
-	letter-spacing: .2579rem;
+	letter-spacing: .09rem;
+	line-height: 2.722rem;
 	text-transform: uppercase;
 	color: var(--black-100);
 }
@@ -185,7 +186,7 @@ __________________________________________________ */
 
 .header__tooltip__navbar__item__link {
 	color: var(--black-100);
-	font-size: 1.625rem;
+	font-size: 1.444rem;
 	letter-spacing: .025rem;
 	transition: all .3s;
 }
@@ -311,7 +312,8 @@ __________________________________________________ */
 	text-transform: uppercase;
 }
 
-.footer__soc-media__cos-media__link > svg {
+.footer__soc-media__cos-media__link > svg,
+.footer__soc-media__cos-media__link > img {
 	margin-right: 12px;
 }
 
