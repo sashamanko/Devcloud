@@ -14,12 +14,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
+
+  <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
   <!-- CSS | My
   __________________________________________________ -->
+  <!-- Global -->
   <link rel="stylesheet" href="./assets/css/global.css">
-  <link rel="stylesheet" href="./assets/css/home/home.css">
   <link rel="stylesheet" href="./assets/css/animation.css">
   <link rel="stylesheet" href="./assets/css/media.css">
+  <!-- Home -->
+  <link rel="stylesheet" href="./assets/css/home/home.css">
+  <link rel="stylesheet" href="./assets/css/home/media.css">
 
 
 </head>
@@ -96,7 +105,7 @@
 
         <button class="hero__btn">Запросить консультацию</button>
 
-        <a class="animation-float" href="#">
+        <a class="animation-float" href="#numbers">
           <svg width="34" height="55" viewBox="0 0 34 55" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M17 0V54M17 54L1 38M17 54L33 38" stroke="white"/>
           </svg>  
@@ -105,9 +114,36 @@
       </div>
     </section>
 
-    <!-- Section |  -->
-    <section>
-      
+    <!-- Section | Numbers -->
+    <section id="numbers" class="numbers">
+      <div class="numbers__container container">
+
+        <div class="swiper numbers__swiper js--numbers-swiper">
+          <div class="swiper-wrapper numbers__swiper__wrapper">
+            <div class="swiper-slide numbers__swiper__slide">
+              <span class="numbers__swiper__number">98%</span>
+              <span class="numbers__swiper__text">завершенных проектов успешно</span>
+            </div>
+            
+            <div class="swiper-slide numbers__swiper__slide">
+              <span class="numbers__swiper__number">30</span>
+              <span class="numbers__swiper__text">календарных дней до первого релиза</span>
+            </div>
+            
+            <div class="swiper-slide numbers__swiper__slide">
+              <span class="numbers__swiper__number">5+</span>
+              <span class="numbers__swiper__text">дней от идеи до готовой концепции</span>
+            </div>
+            
+            <div class="swiper-slide numbers__swiper__slide">
+              <span class="numbers__swiper__number">+20%</span>
+              <span class="numbers__swiper__text">к эффективности бизнеса</span>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
     </section>
 
   </main>
@@ -211,7 +247,16 @@
     </div>
   </footer>
 
+  <!-- JS | Swiper JS
+  __________________________________________________ -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- JS | My
+  __________________________________________________ -->
+  <!-- Global -->
   <script src="./assets/js/index.js" type="module"></script>
+  <!-- Home -->
+  <script src="./assets/js/home/home.js" type="module"></script>
 
 </body>
 

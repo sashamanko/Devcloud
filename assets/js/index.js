@@ -2,7 +2,7 @@
 // __________________________________________________
 
 // Import
-import headerTooltip from "./components/index/click.js"
+import headerTooltip from "./components/index/click.js";
 
 // Event listener
 document.addEventListener('DOMContentLoaded', () => {
