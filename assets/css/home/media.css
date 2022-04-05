@@ -1,0 +1,83 @@
+/* media.css
+__________________________________________________ */
+
+@media screen and (max-width: 1000px) {
+    .numbers__swiper__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 56px;
+    }
+
+    .numbers__swiper__slide:not(:last-child) {
+        border: none;
+    }
+
+    .numbers__swiper__slide:nth-child(odd) {
+        border-right: 3px solid var(--turquoise-100);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .numbers__swiper__wrapper {
+        display: flex;
+        max-height: 290px;
+        padding: 42px 0 55px 0;
+    }
+
+    .numbers__swiper::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 224px;
+        height: 2px;
+        background: #017b6530;
+        transform: translateX(-50%);
+    }
+
+    .numbers__swiper__slide:nth-child(odd) {
+        border-right: none;
+    }
+    
+    .numbers__swiper__slide::before,
+    .numbers__swiper__slide::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: 13px;
+        height: 2px;
+        background: var(--black-100);
+        transform: translateY(-50%);
+    }
+
+    .numbers__swiper__slide::before {
+        left: 0;
+    }
+
+    .numbers__swiper__slide::after {
+        right: 0;
+    }
+
+    .numbers__swiper__slide::after {
+        right: 0;
+    }
+
+    .numbers__swiper__slide:nth-child(even)::before {
+        left: -7.5px;
+    }
+
+    .numbers__swiper__slide:nth-child(odd)::after {
+        right: -7.5px;
+    }
+    
+    .numbers__swiper__number {
+        font-size: 1.2222rem;
+        line-height: 1.666rem;
+    }
+    
+    .numbers__swiper__text {
+        font-size: .6666rem;
+        line-height: 1.666rem;
+        max-width: 100px;
+        line-height: .6666rem;
+    }
+}

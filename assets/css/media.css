@@ -27,7 +27,7 @@ __________________________________________________ */
 
     .footer__container {
         display: grid;
-        column-gap: 200px;
+        column-gap: 210px;
     }
 
     .footer__container > .footer__soc-media {
@@ -51,6 +51,8 @@ __________________________________________________ */
         column-gap: 50px;
     }
 }
+
+
 
 @media screen and (max-width: 320px) {
     .header__menu-btn > span {
