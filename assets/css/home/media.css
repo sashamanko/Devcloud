@@ -1,6 +1,12 @@
 /* media.css
 __________________________________________________ */
 
+@media screen and (max-width: 1400px) {
+    .guarantee-quality__left {
+        width: 45%;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .numbers__swiper__wrapper {
         grid-template-columns: repeat(2, 1fr);
@@ -13,6 +19,56 @@ __________________________________________________ */
 
     .numbers__swiper__slide:nth-child(odd) {
         border-right: 3px solid var(--turquoise-100);
+    }
+
+    .guarantee-quality {
+        display: flex;
+    }
+
+    .guarantee-quality__left {
+        display: none;
+    }
+
+    .guarantee-quality__right {
+        padding-left: 0;
+    }
+
+    .guarantee-quality__right__title {
+        max-width: 560px;
+    }
+
+    .guarantee-quality__right__title::before {
+        transform: translate(100%, -50%);
+    }
+
+    .guarantee-quality__right__title::after {
+        transform: translate(-100%, -50%) rotate(180deg);
+    }
+
+    .guarantee-quality__right__block-btn {
+        margin-bottom: 80px;
+    }
+
+    .guarantee-quality__right__block-btn > button {
+        width: 267px;
+        padding: 10px;
+    }
+
+    .guarantee-quality__right__block-btn > button:first-child {
+        margin-right: 35px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .guarantee-quality__right__block-btn > .btn-transparent {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .guarantee-quality__right__title {
+        font-size: 1.6rem;
+        max-width: 450px;
     }
 }
 
@@ -79,5 +135,118 @@ __________________________________________________ */
         line-height: 1.666rem;
         max-width: 100px;
         line-height: .6666rem;
+    }
+
+    .guarantee-quality__right__title {
+        max-width: 370px;
+        font-size: 1.4rem;
+        line-height: 1.33rem;
+        margin-bottom: 35px;
+    }
+
+    .guarantee-quality__right__title::before,
+    .guarantee-quality__right__title::after {
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+    }
+
+    .guarantee-quality__right__text {
+        max-width: 430px;
+        font-size: 1rem;
+    }
+
+    .guarantee-quality__right__block-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .guarantee-quality__right__block-btn > button:first-child {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .guarantee-quality__right__title {
+        max-width: 285px;
+        font-size: 1rem;
+        line-height: 1.33rem;
+        margin-bottom: 35px;
+
+    }
+        
+    .guarantee-quality__right__title::before,
+    .guarantee-quality__right__title::after {
+        width: 20px;
+        height: 20px;
+        background-size: cover;
+    }
+
+    .guarantee-quality__right__text {
+        max-width: 278px;
+        font-size: .777rem;
+        line-height: .888rem;
+    }
+    
+    .guarantee-quality__right__block-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .guarantee-quality__right__block-btn > button:first-child {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .guarantee-quality__right__block-btn > button {
+        font-size: .6rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
+    .guarantee-quality__right__title {
+        max-width: 268px;
+        line-height: 1.33rem;
+        margin-bottom: 35px;
+    }
+
+    .guarantee-quality__right__img {
+        display: block;
+    }
+
+    .guarantee-quality__right__block-btn {
+        margin-bottom: 0;
+    }
+    
+    .guarantee-quality__right__block-btn > button {
+        width: auto;
+        font-size: .666rem;
+        line-height: .888rem;
+        padding: 9px 24px;
+    }
+
+    .guarantee-quality__right__block-btn > button:first-child {
+        margin-bottom: 0;
+    }
+
+    .guarantee-quality__right__block-btn > .btn-transparent {
+        display: none;
+    }
+
+    .guarantee-quality__right__text {
+        padding-bottom: 0;
+        margin-bottom: 30px;
+    }
+
+    .guarantee-quality__right__sub-text {
+        display: none;
     }
 }

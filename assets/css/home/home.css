@@ -39,9 +39,6 @@ __________________________________________________ */
     color: var(--white-100);
     font-weight: 400;
     font-size: .888rem;
-    line-height: 1.22rem;
-    background: #00997dc9;
-    border-radius: 39px;
 }
 
 /* Section | Hero
@@ -61,8 +58,6 @@ __________________________________________________ */
     text-align: center;
     font-size: 18px;
     background: #fff;
-
-    /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -127,4 +122,93 @@ __________________________________________________ */
 
 .swiper-pagination-bullet-active {
     transform: translateY(-1px);
+}
+
+/* Section | Guarantee quality
+__________________________________________________ */
+
+.guarantee-quality {
+    margin-bottom: 100px;
+}
+
+.guarantee-quality__container {
+    max-height: 583px;
+    height: 100%;
+}
+
+.guarantee-quality__left {
+    width: 100%;
+    margin-right: 15px;
+}
+
+.guarantee-quality__left__img {
+    margin: auto 0;
+    width: 100%;
+}
+
+.guarantee-quality__right {
+    align-items: center;
+    flex-direction: column;
+    min-width: 50%;
+    padding-left: 15px;
+}
+
+.guarantee-quality__right__title {
+    position: relative;
+    margin: 56px 0 57px 0;
+    font-size: 2.222rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: .09999rem;
+    text-align: center;
+}
+
+.guarantee-quality__right__title:before,
+.guarantee-quality__right__title:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url('../../images/home/paws.png');
+}
+
+.guarantee-quality__right__title::before {
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.guarantee-quality__right__title:after {
+    left: 0;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.guarantee-quality__right__img {
+    display: none;
+    width: calc(100% + 30px);
+    margin-bottom: 30px;
+}
+
+.guarantee-quality__right__block-btn > .btn-transparent {
+    display: none;
+}
+
+.guarantee-quality__right__text {
+    max-width: 569px;
+    padding-bottom: 35px;
+    font-size: 1.27rem;
+    font-weight: 400;
+    line-height: 1.72rem;
+    text-align: center;
+}
+
+.guarantee-quality__right__sub-text {
+    max-width: 657px;
+    margin-top: auto;
+    padding-top: 15px;
+    font-size: .777rem;
+    font-weight: 300;
+    line-height: 1.055rem;
+    letter-spacing: -0.0006475rem;
+    text-align: center;
 }
