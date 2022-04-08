@@ -199,15 +199,16 @@ __________________________________________________ */
         justify-content: center;
         margin-bottom: 30px;
     }
+    
+    .guarantee-quality__right__block-btn > button {
+        font-size: .6rem;
+    }
 
     .guarantee-quality__right__block-btn > button:first-child {
         margin-right: 0;
         margin-bottom: 15px;
     }
     
-    .guarantee-quality__right__block-btn > button {
-        font-size: .6rem;
-    }
 }
 
 @media screen and (max-width: 320px) {
