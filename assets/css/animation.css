@@ -1,5 +1,11 @@
 .hover-turquoise-100:hover {
     color: var(--turquoise-100);
+    stroke: var(--turquoise-100);
+}
+
+.hover-turquoise-200:hover {
+  color: var(--turquoise-200);
+  stroke: var(--turquoise-200);
 }
 
 .animation-float {
