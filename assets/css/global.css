@@ -70,6 +70,31 @@ __________________________________________________ */
 	display: flex;
 }
 
+.btn {
+	padding: 11px 35px;
+	font-size: .888rem;
+	font-weight: 400;
+	line-height: 1.222rem;
+	border-radius: 22px;
+}
+
+.btn-turquoise {
+	color: var(--white-100);
+	background: #00997dc9;
+}
+
+.btn-black {
+	color: var(--white-100);
+	background: var(--black-100);
+	box-shadow: 4px 4px 7px #00000040;
+}
+
+.btn-transparent {
+	color: var(--black-100);
+	background: transparent;
+	border: 1px solid var(--black-100);
+}
+
 /* Header
 __________________________________________________ */
 
